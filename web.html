@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Help Box - Анонимная платформа для студентов</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <a class="site-name" onclick="goToMain()">Help Box</a>
+        </div>
+        <div class="header-right">
+            <div class="question-mark" onclick="showModal()">?</div>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <div class="hero-title">HELP BOX</div>
+        <div class="hero-subtitle">Анонимная коммуникация между студентами и администрацией</div>
+    </div>
+
+    <div class="content">
+        <div class="main-box">
+            <div class="corner-animation corner-tl"></div>
+            <div class="corner-animation corner-tr"></div>
+            <div class="corner-animation corner-bl"></div>
+            <div class="corner-animation corner-br"></div>
+
+            <div class="box-content">
+                <div class="box-header">
+                    <div class="box-title">Ваш Голос Имеет Значение</div>
+                    <div class="box-subtitle">Безопасно • Анонимно • Эффективно</div>
+                </div>
+
+                <div class="features-list">
+                    <div class="feature-item">Полная анонимность всех обращений</div>
+                    <div class="feature-item">Быстрая обработка в течение 24 часов</div>
+                    <div class="feature-item">Защита персональных данных</div>
+                </div>
+
+                <div class="box-description">
+                    <div class="description-text">
+                        Help Box — это инновационная платформа, созданная для студентов колледжа. Мы предоставляем безопасный канал связи с администрацией, где вы можете анонимно делиться предложениями, сообщать о проблемах или получать помощь. Ваше мнение важно для создания лучшей учебной среды!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navigation-section">
+            <div class="nav-block" onclick="goToHelp()">
+                <div class="nav-title">Помощь</div>
+                <div class="nav-description">Получите поддержку и ответы на ваши вопросы. Мы поможем разобраться в сложных ситуациях и найдем решение вместе с вами.</div>
+            </div>
+            <div class="nav-block" onclick="goToProposal()">
+                <div class="nav-title">Предложение</div>
+                <div class="nav-description">Поделитесь своими идеями по улучшению учебного процесса, инфраструктуры колледжа или организации мероприятий.</div>
+            </div>
+            <div class="nav-block" onclick="goToComplaint()">
+                <div class="nav-title">Жалоба</div>
+                <div class="nav-description">Сообщите о проблемах, нарушениях или неудобствах. Ваша жалоба будет рассмотрена анонимно и профессионально.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="infoModal">
+        <div class="modal-content">
+            <div class="modal-close" onclick="hideModal()">×</div>
+            <div class="modal-title">О Платформе Help Box</div>
+
+            <div class="info-section">
+                <div class="section-title">НАЗНАЧЕНИЕ САЙТА</div>
+                <div class="section-text mono-text">
+                    Создание безопасного канала коммуникации между студентами и администрацией учебного заведения
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="section-title">КЛЮЧЕВЫЕ ФУНКЦИИ</div>
+                <ul class="feature-list">
+                    <li><span class="highlight-text">Анонимные обращения</span> - полная конфиденциальность данных</li>
+                    <li><span class="highlight-text">Три типа коммуникации</span> - помощь, предложения, жалобы</li>
+                    <li><span class="highlight-text">Быстрая обработка</span> - ответ в течение 24 часов</li>
+                    <li><span class="highlight-text">Защита персональных данных</span> - шифрование информации</li>
+                    <li><span class="highlight-text">Простота использования</span> - интуитивно понятный интерфейс</li>
+                </ul>
+            </div>
+
+            <div class="info-section">
+                <div class="section-title">ОСНОВНЫЕ ЗАДАЧИ</div>
+                <div class="section-text italic-text">
+                    Обеспечение обратной связи между студенческим сообществом и администрацией колледжа
+                </div>
+                <div class="section-text">
+                    • Предоставление возможности анонимно сообщать о проблемах<br>
+                    • Создание платформы для конструктивных предложений<br>
+                    • Организация системы оперативной помощи студентам<br>
+                    • Улучшение учебной среды через открытый диалог<br>
+                    • Повышение уровня доверия в учебном заведении
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="web.js"></script>
+</body>
+</html>

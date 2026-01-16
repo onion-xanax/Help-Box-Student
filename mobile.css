@@ -1,0 +1,389 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0c0c1d 0%, #1a1a2e 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(13, 13, 29, 0.98);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(138, 43, 226, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-header-left .mobile-site-name {
+    color: #8A2BE2;
+    font-size: 22px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+    font-family: 'Monaco', 'Consolas', monospace;
+    letter-spacing: 0.5px;
+}
+
+    .mobile-header-left .mobile-site-name:active {
+        color: #9d4edd;
+        transform: scale(0.95);
+    }
+
+.mobile-header-right .mobile-question-mark {
+    color: #8A2BE2;
+    font-size: 24px;
+    font-weight: 900;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #8A2BE2;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.7);
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+}
+
+    .mobile-header-right .mobile-question-mark:active {
+        background: #8A2BE2;
+        color: #0c0c1d;
+        transform: scale(0.95);
+    }
+
+.mobile-hero-section {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.mobile-hero-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #8A2BE2 0%, #9d4edd 50%, #c77dff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 8px;
+    font-family: 'Monaco', 'Consolas', monospace;
+    letter-spacing: 1px;
+    text-shadow: 0 0 20px rgba(138, 43, 226, 0.4);
+}
+
+.mobile-hero-subtitle {
+    font-size: 1rem;
+    color: #b19cd9;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    padding: 0 10px;
+}
+
+.mobile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 0 15px 40px;
+}
+
+.mobile-main-box {
+    width: 100%;
+    max-width: 500px;
+    background: linear-gradient(145deg, #2d1b69 0%, #4a2c92 100%);
+    border-radius: 20px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 30px rgba(106, 13, 173, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+    .mobile-main-box:active {
+        transform: scale(0.98);
+    }
+
+.mobile-box-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-box-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mobile-box-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    font-family: 'Georgia', serif;
+}
+
+.mobile-box-subtitle {
+    font-size: 1rem;
+    color: #e6e6fa;
+    font-weight: 600;
+    line-height: 1.4;
+    font-family: 'Arial', sans-serif;
+}
+
+.mobile-features-list {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    padding: 18px;
+    margin: 15px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+
+.mobile-feature-item {
+    font-size: 0.95rem;
+    color: #f0e6ff;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+}
+
+    .mobile-feature-item:last-child {
+        margin-bottom: 0;
+    }
+
+.mobile-box-description {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 4px solid #8A2BE2;
+}
+
+.mobile-description-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Georgia', serif;
+    font-weight: 500;
+}
+
+.mobile-navigation-section {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mobile-nav-block {
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.4) 0%, rgba(157, 78, 221, 0.3) 100%);
+    border-radius: 15px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    position: relative;
+    overflow: hidden;
+}
+
+    .mobile-nav-block:active {
+        background: linear-gradient(135deg, rgba(138, 43, 226, 0.6) 0%, rgba(157, 78, 221, 0.5) 100%);
+        transform: scale(0.98);
+        box-shadow: 0 10px 20px rgba(106, 13, 173, 0.4);
+    }
+
+.mobile-nav-title {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    font-family: 'Monaco', 'Consolas', monospace;
+    letter-spacing: 0.5px;
+}
+
+.mobile-nav-description {
+    font-size: 0.9rem;
+    color: #e6e6fa;
+    line-height: 1.4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mobile-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 15px;
+}
+
+.mobile-modal-content {
+    background: linear-gradient(135deg, #2d1b69 0%, #4a2c92 100%);
+    border-radius: 20px;
+    padding: 25px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 85vh;
+    overflow-y: auto;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.mobile-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 26px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+    .mobile-modal-close:active {
+        color: #8A2BE2;
+        background: rgba(255, 255, 255, 0.1);
+        transform: rotate(90deg);
+    }
+
+.mobile-modal-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Monaco', 'Consolas', monospace;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-info-section {
+    margin-bottom: 20px;
+}
+
+    .mobile-info-section:last-child {
+        margin-bottom: 0;
+    }
+
+.mobile-section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #8A2BE2;
+    margin-bottom: 12px;
+    font-family: 'Courier New', monospace;
+    border-left: 3px solid #8A2BE2;
+    padding-left: 12px;
+}
+
+.mobile-section-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #e6e6fa;
+    margin-bottom: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mobile-mono-text {
+    font-family: 'Monaco', 'Consolas', monospace;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 12px;
+    border-radius: 10px;
+    border-left: 3px solid #8A2BE2;
+    font-size: 0.85rem;
+}
+
+.mobile-italic-text {
+    font-style: italic;
+    color: #b19cd9;
+    font-size: 0.85rem;
+}
+
+.mobile-highlight-text {
+    background: linear-gradient(135deg, #8A2BE2, #9d4edd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+.mobile-feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0;
+}
+
+    .mobile-feature-list li {
+        padding: 6px 0;
+        padding-left: 20px;
+        position: relative;
+        color: #f0e6ff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+        .mobile-feature-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 8px;
+            color: #8A2BE2;
+            font-weight: bold;
+        }
+
+@media (max-width: 320px) {
+    .mobile-hero-title {
+        font-size: 2rem;
+    }
+
+    .mobile-main-box {
+        padding: 20px;
+    }
+
+    .mobile-box-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile-content {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}

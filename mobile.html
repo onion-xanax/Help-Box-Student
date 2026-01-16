@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Help Box</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <div class="mobile-header">
+        <div class="mobile-header-left">
+            <a class="mobile-site-name" onclick="goToMain()">Help Box</a>
+        </div>
+        <div class="mobile-header-right">
+            <div class="mobile-question-mark" onclick="showModal()">?</div>
+        </div>
+    </div>
+
+    <div class="mobile-hero-section">
+        <div class="mobile-hero-title">HELP BOX</div>
+        <div class="mobile-hero-subtitle">Анонимная коммуникация между студентами и администрацией</div>
+    </div>
+
+    <div class="mobile-content">
+        <div class="mobile-main-box">
+            <div class="mobile-box-content">
+                <div class="mobile-box-header">
+                    <div class="mobile-box-title">Ваш Голос Имеет Значение</div>
+                    <div class="mobile-box-subtitle">Безопасно • Анонимно • Эффективно</div>
+                </div>
+
+                <div class="mobile-features-list">
+                    <div class="mobile-feature-item">Полная анонимность всех обращений</div>
+                    <div class="mobile-feature-item">Быстрая обработка в течение 24 часов</div>
+                    <div class="mobile-feature-item">Защита персональных данных</div>
+                </div>
+
+                <div class="mobile-box-description">
+                    <div class="mobile-description-text">
+                        Help Box — это инновационная платформа, созданная для студентов колледжа. Мы предоставляем безопасный канал связи с администрацией, где вы можете анонимно делиться предложениями, сообщать о проблемах или получать помощь.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-navigation-section">
+            <div class="mobile-nav-block" onclick="goToHelp()">
+                <div class="mobile-nav-title">Помощь</div>
+                <div class="mobile-nav-description">Получите поддержку и ответы на ваши вопросы.</div>
+            </div>
+            <div class="mobile-nav-block" onclick="goToProposal()">
+                <div class="mobile-nav-title">Предложение</div>
+                <div class="mobile-nav-description">Поделитесь своими идеями по улучшению.</div>
+            </div>
+            <div class="mobile-nav-block" onclick="goToComplaint()">
+                <div class="mobile-nav-title">Жалоба</div>
+                <div class="mobile-nav-description">Сообщите о проблемах или неудобствах.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-modal-overlay" id="infoModal">
+        <div class="mobile-modal-content">
+            <div class="mobile-modal-close" onclick="hideModal()">×</div>
+            <div class="mobile-modal-title">О Платформе Help Box</div>
+
+            <div class="mobile-info-section">
+                <div class="mobile-section-title">НАЗНАЧЕНИЕ САЙТА</div>
+                <div class="mobile-section-text mobile-mono-text">
+                    Создание безопасного канала коммуникации между студентами и администрацией учебного заведения
+                </div>
+            </div>
+
+            <div class="mobile-info-section">
+                <div class="mobile-section-title">КЛЮЧЕВЫЕ ФУНКЦИИ</div>
+                <ul class="mobile-feature-list">
+                    <li><span class="mobile-highlight-text">Анонимные обращения</span> - полная конфиденциальность данных</li>
+                    <li><span class="mobile-highlight-text">Три типа коммуникации</span> - помощь, предложения, жалобы</li>
+                    <li><span class="mobile-highlight-text">Быстрая обработка</span> - ответ в течение 24 часов</li>
+                    <li><span class="mobile-highlight-text">Защита персональных данных</span> - шифрование информации</li>
+                </ul>
+            </div>
+
+            <div class="mobile-info-section">
+                <div class="mobile-section-title">ОСНОВНЫЕ ЗАДАЧИ</div>
+                <div class="mobile-section-text mobile-italic-text">
+                    Обеспечение обратной связи между студенческим сообществом и администрацией колледжа
+                </div>
+                <div class="mobile-section-text">
+                    • Предоставление возможности анонимно сообщать о проблемах<br>
+                    • Создание платформы для конструктивных предложений<br>
+                    • Организация системы оперативной помощи студентам
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="mobile.js"></script>
+</body>
+</html>

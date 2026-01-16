@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Help Box - Предложение</title>
+    <link rel="stylesheet" href="/proposal/web.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <a class="site-name" onclick="goToMain()">Help Box</a>
+        </div>
+        <div class="header-right">
+            <div class="question-mark" onclick="showModal()">?</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="proposal-section">
+            <div class="proposal-title">Предложение</div>
+            <div class="proposal-description">
+                Поделитесь своими идеями по улучшению учебного процесса, инфраструктуры колледжа или организации мероприятий.
+            </div>
+
+            <div class="chat-container">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-title">Proposal Terminal</div>
+                        <div class="terminal-controls">
+                            <div class="control minimize"></div>
+                            <div class="control maximize"></div>
+                            <div class="control close"></div>
+                        </div>
+                    </div>
+                    <div class="terminal-body" id="terminalBody"></div>
+                    <div class="terminal-input">
+                        <span class="prompt">Student~$</span>
+                        <input type="text" id="messageInput" placeholder="Опишите ваше предложение...">
+                        <button onclick="sendMessage()" id="sendButton">Отправить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="infoModal">
+        <div class="modal-content">
+            <div class="modal-close" onclick="hideModal()">×</div>
+            <div class="modal-title">О Платформе Help Box</div>
+
+            <div class="info-section">
+                <div class="section-title">НАЗНАЧЕНИЕ САЙТА</div>
+                <div class="section-text mono-text">
+                    Создание безопасного канала коммуникации между студентами и администрацией учебного заведения
+                </div>
+            </div>
+
+            <div class="info-section">
+                <div class="section-title">КЛЮЧЕВЫЕ ФУНКЦИИ</div>
+                <ul class="feature-list">
+                    <li><span class="highlight-text">Анонимные обращения</span> - полная конфиденциальность данных</li>
+                    <li><span class="highlight-text">Три типа коммуникации</span> - помощь, предложения, жалобы</li>
+                    <li><span class="highlight-text">Быстрая обработка</span> - ответ в течение 24 часов</li>
+                    <li><span class="highlight-text">Защита персональных данных</span> - шифрование информации</li>
+                    <li><span class="highlight-text">Простота использования</span> - интуитивно понятный интерфейс</li>
+                </ul>
+            </div>
+
+            <div class="info-section">
+                <div class="section-title">ОСНОВНЫЕ ЗАДАЧИ</div>
+                <div class="section-text italic-text">
+                    Обеспечение обратной связи между студенческим сообществом и администрацией колледжа
+                </div>
+                <div class="section-text">
+                    • Предоставление возможности анонимно сообщать о проблемах<br>
+                    • Создание платформы для конструктивных предложений<br>
+                    • Организация системы оперативной помощи студентам<br>
+                    • Улучшение учебной среды через открытый диалог<br>
+                    • Повышение уровня доверия в учебном заведении
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/proposal/web.js"></script>
+</body>
+</html>

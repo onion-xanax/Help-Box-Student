@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Help Box - Жалоба</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/complaint/mobile.css">
+</head>
+<body>
+    <div class="mobile-header">
+        <div class="mobile-header-left">
+            <a class="mobile-site-name" onclick="goToMain()">Help Box</a>
+        </div>
+        <div class="mobile-header-right">
+            <div class="mobile-question-mark" onclick="showModal()">?</div>
+        </div>
+    </div>
+
+    <div class="mobile-content">
+        <div class="mobile-complaint-section">
+            <div class="mobile-complaint-title">Жалоба</div>
+            <div class="mobile-complaint-description">
+                Сообщите о проблемах, нарушениях или неудобствах. Ваша жалоба будет рассмотрена анонимно и профессионально.
+            </div>
+
+            <div class="mobile-chat-container">
+                <div class="mobile-terminal">
+                    <div class="mobile-terminal-header">
+                        <div class="mobile-terminal-title">Complaint Terminal</div>
+                        <div class="mobile-terminal-controls">
+                            <div class="mobile-control mobile-minimize"></div>
+                            <div class="mobile-control mobile-maximize"></div>
+                            <div class="mobile-control mobile-close"></div>
+                        </div>
+                    </div>
+                    <div class="mobile-terminal-body" id="terminalBody"></div>
+                    <div class="mobile-terminal-input">
+                        <span class="mobile-prompt">Student~$</span>
+                        <input type="text" id="messageInput" placeholder="Опишите вашу жалобу..." maxlength="1000">
+                        <button onclick="sendMessage()" id="sendButton">Отпр</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-modal-overlay" id="infoModal">
+        <div class="mobile-modal-content">
+            <div class="mobile-modal-close" onclick="hideModal()">×</div>
+            <div class="mobile-modal-title">О Платформе Help Box</div>
+
+            <div class="mobile-info-section">
+                <div class="mobile-section-title">НАЗНАЧЕНИЕ САЙТА</div>
+                <div class="mobile-section-text mobile-mono-text">
+                    Создание безопасного канала коммуникации между студентами и администрацией учебного заведения
+                </div>
+            </div>
+
+            <div class="mobile-info-section">
+                <div class="mobile-section-title">КЛЮЧЕВЫЕ ФУНКЦИИ</div>
+                <ul class="mobile-feature-list">
+                    <li><span class="mobile-highlight-text">Анонимные обращения</span> - полная конфиденциальность данных</li>
+                    <li><span class="mobile-highlight-text">Три типа коммуникации</span> - помощь, предложения, жалобы</li>
+                    <li><span class="mobile-highlight-text">Быстрая обработка</span> - ответ в течение 24 часов</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="/complaint/mobile.js"></script>
+</body>
+</html>
