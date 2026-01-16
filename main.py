@@ -18,7 +18,7 @@ app.config['SESSION_COOKIE_SAMESITE'] = 'Strict'
 app.config['PERMANENT_SESSION_LIFETIME'] = 3600
 
 BOT_TOKEN = "8460550226:AAECsZfgecgr2-bkKw021qwwSDRG6BlyH98"
-ADMIN_ID = [142976189, 122746101]
+ADMIN_ID = [87560475, 122746101]
 
 bot = None
 dp = None
@@ -415,3 +415,4 @@ if __name__ == '__main__':
         logging.info("Bot started in separate thread")
 
     app.run(debug=False, port=5000, use_reloader=False, host='0.0.0.0')
+
